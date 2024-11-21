@@ -1,0 +1,336 @@
+*{
+  box-sizing: border-box;
+}
+
+header{
+  width: 100vmax;
+  height: 500px;
+  position: relative;
+}
+.jpg1{
+width: 100%;
+height: 100%;
+position: relative;
+}
+.blod{
+  position: absolute;
+  margin: -8vw 0 0 -13vw;
+  z-index: 90;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 100px;
+  width: 55%;
+  height: 55%;
+  filter: brightness(0);
+  
+}
+.jpg2{
+  width: 5%;
+  height: 5%;
+  margin-inline: 15px;
+}
+.cnt{
+  text-align: center;
+  background-color: aliceblue;
+  transition: all 0.3s ease-in-out;
+}
+.cnt:hover{
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 5vw;
+  margin-top: -5vw;
+}
+.sty{
+  font-family: DreamScar;
+  color: rgb(20, 20, 20);
+  text-align: center;
+  font-size: 1.75vw;
+}
+
+
+/* REGISTR */
+
+
+.reg{
+  width: 90vw;
+  height: 50vw;
+  margin: 0 auto;
+  transition: 0.4s;
+  border-top: 1vw rgb(29, 29, 29) solid;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+  background-color: #121212;
+  z-index: 102;
+}
+.inp{
+  width: 20vw;
+  height: 3vw;
+  transition: 0.5s;
+  background-color: rgb(39, 39, 39);
+  font-family: 'MasonChronicles';
+  color: rgb(255, 255, 255);
+  font-size: 1vw;
+  border: none;
+  border-radius: 1vw;
+  float: left;
+  margin: 0 0 0 16vw;
+  outline: none;
+  padding:0.6vw ;
+  z-index: 100;
+  position: absolute;
+}
+.inp:hover{
+  border: 0.1vw rgb(141, 141, 141) solid;
+  border-radius: 0.1vw;
+  box-shadow: 0 0 1vw rgba(255, 255, 255, 0.151);
+  background-color: black;
+  padding:1vw ;
+
+}
+.reg:hover .inp{
+  background-color: #000000;
+  border: 0.1vw solid rgb(49, 49, 49);
+}
+.reg:hover{
+  border-top: 1vw rgba(0, 0, 0, 0.253) solid;
+  box-shadow: 0 0 4vw rgb(0, 0, 0);
+  background-color: #050505;
+}
+
+.txt2{
+  width: 50vw;
+  height: 7vw;
+  font-family: 'DreamScar';
+  color: rgb(0, 0, 0);
+  font-size: 2vw;
+  z-index: 99;
+  float: left;
+  margin: 0 0 0 4vw;
+  -webkit-text-stroke: 0.04vw white;
+  transition: 0.2s;
+  position: absolute;
+}
+.txt2:hover{
+  -webkit-text-stroke: 0.04vw rgb(255, 98, 98);
+  font-size: 2.3vw;
+  color: rgb(138, 27, 27);
+  text-shadow: 0 0 1vw rgb(172, 42, 85);
+}
+
+.katana{
+  margin: 0vw 0 0 50vw;
+  position: absolute;
+  transition: 0.3s;
+  opacity: 0;
+  width: 30w;
+  height: 28vw;
+}
+
+.reg:hover .katana{
+  filter: drop-shadow(0 0 0.7vw rgb(47, 0, 0));
+  opacity: 1;
+  margin: 2vw 0 0 55vw;
+  width: 32w;
+  height: 30vw;
+}
+.btnnew {
+  justify-content: center;
+  padding: 1vw 0 0 0;
+  font-family: DreamScar;
+  font-size: 1.5vw;
+  margin: 18vw 0 0 34vw;
+  width: 20vw;
+  height: 5vw;
+  z-index: 101;
+  color: rgb(194, 0, 0);
+  position: absolute;
+  text-align: center;
+  transition: 0.4s;
+  background-size: 200% auto;
+  border-radius: 10px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #1e1e1e 0%, #121212 51%, #181818 100%);
+}
+.btnnew2 {
+  justify-content: center;
+  padding: 1vw 0 0 0;
+  font-family: DreamScar;
+  font-size: 1.5vw;
+  margin: 9vw 0 0 34vw;
+  width: 20vw;
+  height: 5vw;
+  z-index: 101;
+  color: rgb(194, 0, 0);
+  position: absolute;
+  text-align: center;
+  transition: 0.4s;
+  background-size: 200% auto;
+  border-radius: 10px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #1e1e1e 0%, #121212 51%, #181818 100%);
+}
+
+.btnnew:hover { 
+  background-image: linear-gradient(to right, #131313 0%, #ff2222 1%, #c20000 51%, #6d0000 100%);
+   background-position: right center;
+   box-shadow: 0 0 20px #5e0000;
+   color: white;
+   width: 35vw;
+   height: 7vw;
+   margin: 19vw 0 0 27vw;
+   font-size: 3vw;  border-radius: 3px;
+}
+.btnnew2:hover { 
+  background-image: linear-gradient(to right, #131313 0%, #ff2222 1%, #c20000 51%, #6d0000 100%);
+   background-position: right center;
+   box-shadow: 0 0 20px #5e0000;
+   color: white;
+   width: 35vw;
+   height: 7vw;
+   margin: 9vw 0 0 27vw;
+   font-size: 3vw;  border-radius: 3px;
+}
+
+
+/* REGISTR END*/
+
+
+
+.fon{
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  transition: 0.9s;
+  z-index: 99;
+  border: 1px white solid;
+}
+.fon:hover{
+  opacity: 1;
+}
+.txt1{
+  font-family: 'DreamScar';
+  color: aliceblue;
+  font-size: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: 90;
+}
+.box1{
+  position: absolute;
+  margin-left: 24%;
+  margin-top: 5vw;
+  width: 50vw;
+  height: 15vw;
+  border: 1px wheat solid;
+  font-family: 'DreamScar';
+  color: aliceblue;
+  font-size: 7vw;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 90;
+}
+.box1:hover{
+  text-shadow: rgb(255, 0, 0) 0px 0vw 100px;
+  font-size: 7.5vw;
+  color: rgb(146, 23, 23);
+
+}
+.box1:hover .blod{
+    position: absolute;
+    opacity: 1;
+    margin: -9vw 0 0 -13vw;
+    filter: brightness(1);
+}
+.spce{
+  width: 1vw;
+  height: 10vw;
+}
+.box2{
+  margin: 10% 0% 5% 5%;
+  width: 80vw;
+  height: 31vw;
+  border: 1px wheat solid;
+  background-color: rgb(10, 10, 10);
+  box-shadow: 0 35px 80px rgb(255, 255, 255, 0.1);
+  transition: 0.9s;
+  position: relative;
+  color: white;
+  font-size: 1vw;
+}
+.box2:hover{
+   height: 44vw;
+   width: 92vw;
+   box-shadow: 0 35px 100px rgb(255, 255, 255, 0.5);
+   color: white;
+   font-size: 2vmax;
+}
+.hero{
+  position: fixed;
+  width: 15vw; height: 20vw;
+  margin: -10vw 0 0 0vw ;
+  transition: 0.3s;
+  border: 1px rgba(255, 255, 255, 0) solid;
+  z-index: 0;
+  rotate: 180deg;
+}
+.menubut{
+  width: 15vw;
+  height: 14vw;
+  position: fixed;
+  border: 0.1vw solid rgba(255, 255, 255, 0);
+  transition: 0.5s;
+  z-index: 200;
+}
+.menubut:hover .btn{
+opacity: 1;
+}
+.menubut:hover .hero{
+  opacity: 0;
+  filter: drop-shadow(0 0 2vw white);
+  transition: 0.6s;
+  margin: -20vw 0 0 0;
+  }
+
+.btn{
+  width: 10vw;
+  height: 3vw;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  margin: 5vw 0 0 2.5vw;
+  transition: 0.4s;
+  background-color: none;
+  font-family: 'MasonChronicles';
+  color: white;
+  font-size: 1.2vw;
+  text-align: center;
+  text-decoration: none;
+  position: fixed;
+  opacity: 0;
+}
+.btn:hover{
+  box-shadow: 0px 0px 80px rgb(255, 255, 255);
+  background-color: white;
+  color: black;
+}
+
+
+
+@font-face {
+	font-family: 'DreamScar';
+	src: url('./fonts/dreamscar.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/dreamscar.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/dreamscar.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/dreamscar.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/dreamscar.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/dreamscar.svg#dreamscar') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'MasonChronicles';
+	src: url('./fonts/masonchronicles.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/masonchronicles.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/masonchronicles.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/masonchronicles.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/masonchronicles.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/masonchronicles.svg#masonchronicles') format('svg'); /* Chrome < 4, Legacy iOS */
+}

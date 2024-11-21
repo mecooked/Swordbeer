@@ -1,0 +1,288 @@
+*{
+  box-sizing: border-box;
+}
+
+header{
+  width: 100vmax;
+  height: 500px;
+  position: relative;
+}
+.jpg1{
+width: 100%;
+height: 100%;
+position: relative;
+}
+.jpg2{
+  width: 100%;
+  height: 60%;
+  position: relative;
+  }
+.pp1{
+  width: 100%;
+  height: 40%;
+  font-family: MasonChronicles;
+  font-size: 1vw;
+  color: white;
+  transition: 0.4s;
+  margin: -0.3vw auto;
+  text-align: center;
+}
+.fon{
+  opacity: 0.8;
+  width: 100%;
+  height: 25vw;
+  transition: 0.9s;
+  z-index: 99;
+  border: 1px white solid;
+}
+.fon:hover{
+  opacity: 1;
+}
+.txt1{
+  font-family: 'DreamScar';
+  color: aliceblue;
+  font-size: 100%;
+  position: absolute;
+  text-align: center;
+}
+.box1{
+  position: absolute;
+  margin-left: 24%;
+  margin-top: 8vw;
+  width: 50vw;
+  height: 15vw;
+  border: 1px wheat solid;
+  font-family: 'DreamScar';
+  color: aliceblue;
+  font-size: 7vw;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 100;
+}
+.box1:hover{
+  text-shadow: rgb(255, 255, 255) 10px 0vw 100px;
+  font-size: 7.5vw;
+
+}
+.kngt{
+  width: 27.5vw; height: 32vw;
+  margin: 5% 0 5% 5%;
+  border-bottom: 0.5px white solid;
+  float: left;
+  /* background-image: url(30.png); */
+  /* background-size: contain;*/
+
+}
+.spce{
+  width: 1vw;
+  height: 1vw;
+}
+.box2{
+  margin: 10% 0% 5% 5%;
+  width: 80vw;
+  height: 31vw;
+  border: 1px wheat solid;
+  background-color: rgb(10, 10, 10);
+  box-shadow: 0 35px 80px rgb(255, 255, 255, 0.1);
+  transition: 0.9s;
+  position: relative;
+  color: white;
+  font-size: 1vw;
+}
+.box2:hover{
+   height: 44vw;
+   width: 92vw;
+   box-shadow: 0 35px 100px rgb(255, 255, 255, 0.5);
+   color: white;
+   font-size: 2vmax;
+}
+.dialog{
+  border: 1px rgba(255, 255, 255, 0.918) solid;
+  float: left;
+  position: relative;
+  margin: 10vw 0 0 5vw;
+  transition: 0.9s;
+  color: aliceblue;
+  white-space: pre-wrap;
+  max-width: 40vw;
+  font-family: 'MasonChronicles';
+}
+.btn{
+  width: 10vw;
+  height: 3vw;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  margin: 5vw 0 0 16.5vw;
+  transition: 0.4s;
+  background-color: none;
+  font-family: 'MasonChronicles';
+  color: white;
+  font-size: 1.2vw;
+  text-align: center;
+  text-decoration: none;
+  float: left;
+}
+.btn:hover{
+  box-shadow: 0px 0px 80px rgb(255, 255, 255);
+  background-color: white;
+  color: black;
+}
+
+
+.ssilka{
+  text-decoration: none;
+  color: white;
+}
+
+.bigbox{
+  display: grid;
+  grid-template-columns: repeat(3, 20vw);
+  grid-template-rows: repeat(1, 25vw);
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.bigbox:hover{
+  background-color: rgb(20, 20, 20);
+  box-shadow: 0 0 20vw rgb(169, 20, 169);
+}
+.grd1{
+  border: 0.2vw rgb(255, 167, 214) solid;
+  height: 20vw;
+  transition: 0.4s;
+  width: 15vw;
+}
+.grd2{
+  border: 0.2vw rgb(255, 160, 242) solid;
+  height: 20vw;
+  width: 15vw;
+  transition: 0.4s;
+}
+.grd3{
+  border: 0.2vw rgb(239, 135, 255) solid;
+  height: 20vw;
+  width: 15vw;
+  transition: 0.4s;
+  
+}
+.grd1:hover .pp1{
+  color: black;
+  background-color: white;
+  font-size: 1.3vw;
+  box-shadow: 0 0 5vw white;
+}
+.grd1:hover .ssilka{
+  color: black;
+}
+.grd2:hover .ssilka{
+  color: black;
+}
+.grd3:hover .ssilka{
+  color: black;
+}
+.grd1:hover{
+  color: black;
+  background-color: rgb(255, 255, 255);
+  font-size: 1.3vw;
+  box-shadow: 0 0 5vw rgb(219, 129, 255);
+  transform: scale(1.1); 
+  border: 0.4vw solid rgb(253, 146, 255);
+  padding: 0.5vw;
+}
+.skidka{
+  position: absolute;
+  z-index: 3;
+  width: 7vw;
+  height: 7vw; 
+  margin: -1vw 0vw 0 -2vw;
+  opacity: 0;
+  transition: 0.4s;
+  rotate: -90deg;
+  scale: 0.3;
+}
+.grd1:hover .skidka{
+  opacity: 1;
+  rotate: 0deg;
+  scale: 1;
+}
+.grd2:hover .pp1{
+  color: black;
+  background-color: white;
+  font-size: 1.3vw;
+  box-shadow: 0 0 5vw white;
+}
+.grd2:hover{
+  color: black;
+  background-color: rgb(255, 255, 255);
+  font-size: 1.3vw;
+  box-shadow: 0 0 5vw rgb(219, 129, 255);
+  transform: scale(1.1);
+  border: 0.4vw solid rgb(253, 146, 255);
+  padding: 1vw;
+}
+.grd3:hover .pp1{
+  color: black;
+  background-color: white;
+  font-size: 1.3vw;
+  box-shadow: 0 0 5vw white;
+  
+}
+.grd3:hover{
+  color: black;
+  background-color: rgb(255, 255, 255);
+  font-size: 1.3vw;
+  box-shadow: 0 0 5vw rgb(219, 129, 255);
+  transform: scale(1.1);
+  border: 0.4vw solid rgb(253, 146, 255);
+  padding: 1vw; 
+}
+.grd2:hover .skidka{
+  opacity: 1;
+  rotate: 0deg;
+  scale: 1;
+}
+.grd3:hover .skidka{
+  opacity: 1;
+  rotate: 0deg;
+  scale: 1;
+}
+.skidtxt{
+  margin: 0 auto 1.4vw auto;
+  width: 60vw;
+  height: 5vw;
+  font-family: 'MasonChronicles';
+  color: aliceblue;
+  font-size: 2vw;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 100;
+  text-shadow: fuchsia 0 0 1vw;
+  border: 0vw rgb(255, 122, 144) solid;
+}
+.skidtxt:hover{
+  scale: 1.25;
+  text-shadow: rgb(255, 44, 248) 0 0 1vw;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.1vw;
+}
+
+
+@font-face {
+	font-family: 'DreamScar';
+	src: url('./fonts/dreamscar.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/dreamscar.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/dreamscar.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/dreamscar.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/dreamscar.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/dreamscar.svg#dreamscar') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'MasonChronicles';
+	src: url('./fonts/masonchronicles.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/masonchronicles.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/masonchronicles.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/masonchronicles.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/masonchronicles.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/masonchronicles.svg#masonchronicles') format('svg'); /* Chrome < 4, Legacy iOS */
+}
